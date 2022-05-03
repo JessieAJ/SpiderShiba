@@ -1,0 +1,32 @@
+@font-face{
+    font-family: 'Nunito';
+    src: url(../fonts/Nunito/Nunito-ExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face{
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay/SFPRODISPLAYBOLD.OTF);
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay/SFProDisplay-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay/SFPRODISPLAYMEDIUM.OTF);
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay/SFPRODISPLAYREGULAR.OTF);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay/SFProDisplay-Semibold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}

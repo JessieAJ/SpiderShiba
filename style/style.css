@@ -1,0 +1,926 @@
+@import 'fonts.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1736px;
+    padding: 0 18px;
+    margin: 0 auto;
+}
+
+/*  === HEADER === start */
+.header{
+    background: linear-gradient(260.81deg, #162758 2.47%, #0A142A 97.49%);
+    height: 925px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*  === nav === start */
+.nav{
+    padding: 25px 0;
+}
+.nav_content{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+}
+.nav_logo{
+    display: flex;
+    align-items: center;
+}
+.nav_logo img{
+    margin-right: 15px;
+}
+.nav_logo_text{
+    font-family: 'Nunito';
+    font-size: 25px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+.inu{
+    color: #E11D2E;
+}
+.nav_link{
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-right: 25px;
+    transition: .2s;
+}
+.nav_link:hover{
+    opacity: 1;
+}
+.nav_button{
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    /* margin-right: 25px; */
+    background: #AC1216;
+    border-radius: 10px;
+    padding: 11px 30px;
+    margin-left: 45px;
+    transition: .2s;
+    display: inline-block;
+}
+.nav_button:hover{
+    opacity: 1;
+}
+.menu-wrap{
+    display: none;
+}
+/*  === nav === end */
+
+/*  === header-intro === start */
+
+/* .header_intro{
+    display: flex;
+    align-items: center;
+
+    flex-grow: 1;
+} */
+.mediashiba{
+    display: none;
+}
+.header_content{
+    display: flex;
+    align-items: center;
+}
+.header_content_info{
+    width: 850px;
+    margin-right: 188px;
+}
+.header_content_title{
+    font-family: 'SF Pro Display';
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 90px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+.header_content_text1{
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #71768E;
+}
+.header_content_text2{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #A0A3B5;
+    margin: 40px 0 45px;
+}
+.header_content_links{
+    display: flex;
+    margin-bottom: 20px;
+}
+.header_content_button1{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    width: 295px;height: 80px;
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.9;
+    margin-right: 25px;
+    transition: .2s;
+}
+.header_content_button2{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    width: 380px;height: 80px;
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.9;
+    transition: .2s;
+}
+.header_content_button1:hover{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    opacity: 1;
+    background: #E11D2E;
+}
+.header_content_button2:hover{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    opacity: 1;
+    background: #E11D2E;
+}
+.header_content_contact{
+    width: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 13px 35px 13px 30px;
+    transition: .2s;
+}
+.header_content_contact:hover{
+    border-color: #FFFFFF;
+}
+.header_content_contact:hover > p{
+    color: #FFFFFF;
+}
+.header_content_contact_text1{
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.2);
+}
+.header_content_contact_text2{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.marquee{
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    padding: 11px 0;
+    background: #5A4039;
+    }
+     
+.marquee span {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: rgba(255, 245, 0, 0.6);
+    display:inline-block;
+    padding-left:100%;
+    -webkit-animation: marquee 30s infinite linear;
+    animation: marquee 30s infinite linear;
+    }
+     
+    @-webkit-keyframes marquee {
+    0%{-webkit-transform: translate(0, 0);}
+    100%{-webkit-transform: translate(-100%, 0);}
+    }
+    @keyframes marquee{
+    0%{transform: translate(0, 0);}
+    100%{transform: translate(-100%, 0)}
+    }
+/*  === header-content === end */
+/*  === HEADER === end */
+
+/*  === MAIN === start */
+.main{
+    background: #101932;
+}
+/*  === web === start */
+.web{
+    padding-top: 50px;
+    height: 1000px;
+}
+.web_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.web_block{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 110px;
+    position: relative;
+    z-index: 100;
+}
+.web_block img{
+    opacity: 0.1;
+    transition: 0.3s;
+}
+.web_block img:hover{
+    opacity: 1;
+}
+.web_info{
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.web_info::before{
+    content: url('../img/web.png');
+    position: absolute;
+    margin-top: -240px;
+    z-index: -2;
+}
+.web_info::after{
+    content: url('../img/earth.png');
+    position: absolute;
+    z-index: -1;
+    margin-top: 55px;
+}
+.web_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.web_button{
+    margin-top: 15px;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 0.9;
+    width: 215px;height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 45px;
+    text-align: center;
+    background: #E11D2E;
+    border-radius: 10px;
+}
+.web_icon1{
+    position: absolute;
+    right: -110px;
+    top: -40px;
+    display: flex;
+}
+.web_icon2{
+    position: absolute;
+    left: -110px;
+    top: 200px;
+    display: flex;
+}
+.web_icon3{
+    position: absolute;
+    right: 30px;
+    bottom: -160px;
+    display: flex;
+}
+.web_icon1::before{
+    content: '';
+    top: -29.5px;
+    left: -29.5px;
+    z-index: 100;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background: #0096F2;
+    opacity: 0.2;
+    position: absolute;
+    display: none;
+}
+.web_icon2::before{
+    content: '';
+    top: -29.5px;
+    left: -29.5px;
+    z-index: 100;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background: #E11D2E;
+    opacity: 0.2;
+    position: absolute;
+    display: none;
+}
+.web_icon3::before{
+    content: '';
+    top: -29.5px;
+    left: -29.5px;
+    z-index: 100;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background: #FF9429;
+    opacity: 0.2;
+    position: absolute;
+    display: none;
+}
+.web_icon1:hover.web_icon1::before{
+    display: block;
+}
+.web_icon2:hover.web_icon2::before{
+    display: block;
+}
+.web_icon3:hover.web_icon3::before{
+    display: block;
+}
+/*  === web === end */
+
+/*  === how === start */
+.how{
+    margin-top: -100px;
+    padding-bottom: 160px;
+}
+.how_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.how_block{
+    display: flex;
+    justify-content: space-evenly;
+}
+.how_card{
+    width: 496px;
+    padding: 30px 40px 10px;
+    background: #384D70;
+    border-radius: 20px;
+    height: max-content;
+}
+.how_card_title{
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin: 30px 0 10px;
+}
+.how_card_posttitle{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.3;
+    margin-bottom: 30px;
+}
+.how_card_text{
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+}
+/*  === how === end */
+
+/*  === earn === start */
+.earn{
+    padding: 50px 0 175px;
+}
+.earn_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.earn_posttitle{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 42px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 10px 0 50px;
+    text-align: center;
+}
+.earn_topcard{
+    background: #071022;
+    border-radius: 30px;
+    display: flex;
+    gap: 35px;
+    padding: 40px 50px 50px;
+    margin-bottom: 50px;
+}
+.earn_topcard_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.earn_topcard_textblock{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.earn_topcard_textblock p{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.6);    
+}
+.earn_block{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.earn_card{
+    border-radius: 30px;
+    padding: 35px 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 848px;
+}
+.earn_card1{
+    background: #FF9429;
+}
+.earn_card2{
+    background: #067CCB;
+}
+.earn_card_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;    
+    margin-bottom: 20px;
+}
+.earn_card_text{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+/*  === earn === end */
+
+/*  === invest === start */
+.invest{
+    padding: 150px 0;
+    background: #30298C;
+}
+.invest_content{
+    display: flex;
+    justify-content: space-between;
+}
+.invest_left{
+    width: 552px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.invest_left_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;    
+}
+.invest_left_text{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin: 20px 0 40px;
+}
+.invest_left_button{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 25px 30px;
+    background: #E11D2E;
+    border-radius: 10px;
+    display: inline-block;
+}
+.invest_right{
+    width: 996px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.invest_right_card{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.invest_right_card img{
+    width: 100px;
+    height: 100px;
+}
+.invest_right_card_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.invest_right_card_text{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+/*  === invest === end */
+
+/*  === roadmap === start */
+.roadmap{
+    padding: 70px 0 130px;
+}
+.roadmap_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+/*  === roadmap === end */
+
+/*  === team === start */
+.team{
+    padding: 70px 0 140px;
+    background: #162344;
+}
+.team_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.team_block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.team_card{
+    width: 350px;
+}
+.team_card_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 20px 0 13px;
+    text-align: center;
+}
+.team_card_text{
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 0.6;  
+    text-align: center;
+}
+.dot{
+    margin: 0 auto;
+    width: 60px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 80px;
+}
+.dot div{
+    width: 10px;
+    height: 10px;
+    background: #A2A7B4;
+    display: flex;
+    flex-direction: column;
+
+}
+.dot div::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #FF0000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dot div::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #A2A7B4;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.team_title1{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.team_block1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/*  === team === end */
+
+/*  === token === start */
+.token{
+    padding: 70px 0 130px;
+    background: #101D3F;
+}
+.token_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 66px;
+    text-align: center;
+}
+.token_block{
+    display: flex;
+    justify-content: space-between;
+}
+.token_side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.token_card{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 25px 50px 20px 30px;
+    width: 444px;
+}
+.token_card_title{
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 10px 0 5px;
+}
+.token_card_text{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+.token1{
+    width: 55px;
+    height: 3px;
+    background: #30298C;
+}
+.token3{
+    width: 90px;
+    height: 3px;
+    background: lightseagreen;
+}
+.token2{
+    display: flex;
+}
+.token2_line1{
+    width: 15px;
+    height: 3px;
+    background: orange;
+    margin-right: 5px;
+}
+.token2_line2{
+    width: 18px;
+    height: 3px;
+    background: purple;
+}
+.token4{
+    width: 30px;
+    height: 3px;
+    background: #133D81;
+}
+.token5{
+    width: 45px;
+    height: 3px;
+    background: red;
+}
+.token6{
+    width: 45px;
+    height: 3px;
+    background: #0096F2;
+}
+/*  === token === end */
+
+/*  === questions === start */
+.questions{
+    padding: 70px 0 150px;
+}
+.questions_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.questions_block{
+    width: 1036px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.questions_card{
+    padding: 17px 25px;
+    background: #384D70;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions_card_text{
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+/*  === questions === end */
+/*  === MAIN === end */
+
+/*  === FOOTER === start */
+
+/*  === community === start */
+.community{
+    padding: 60px 0 100px;
+    background: #162758;
+}
+.community_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.community_title{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 780px;
+    margin-bottom: 110px;
+}
+.community_block{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.community_address{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 700px;
+    padding: 22px 55px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.community_address_title{
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 5px;
+}
+.community_address_text{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.communityshiba::before{
+    content: url(../img/communityback.png);
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -572px;
+    z-index: 1;
+    opacity: 0.1;
+}
+/*  === community === end */
+
+/*  === end === start */
+.end{
+    padding: 40px 0;
+    background: #0D1428;
+}
+.end_text{
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+/*  === end === end */
+/*  === FOOTER === end */
